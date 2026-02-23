@@ -1,0 +1,201 @@
+.car-list {
+  width: 100%;
+}
+
+.car-list h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-cars {
+  text-align: center;
+  color: #666;
+  padding: 40px;
+  font-style: italic;
+}
+
+.car-table-container {
+  overflow-x: auto;
+}
+
+.car-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.car-table thead {
+  background-color: #f8f9fa;
+}
+
+.car-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.car-table td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.car-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.rented {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.maintenance {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.toggle-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-button.make-available {
+  background-color: #28a745;
+  color: white;
+}
+
+.toggle-button.make-available:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.toggle-button.make-unavailable {
+  background-color: #dc3545;
+  color: white;
+}
+
+.toggle-button.make-unavailable:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.toggle-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.rental-date-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+}
+
+.rental-date-input {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.date-form-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.date-submit-button {
+  padding: 4px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.date-submit-button:hover {
+  background-color: #218838;
+}
+
+.date-cancel-button {
+  padding: 4px 12px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.date-cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.delete-button {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.delete-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.maintenance-button {
+  padding: 6px 12px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.maintenance-button:hover:not(:disabled) {
+  background-color: #f57c00;
+}
+
+.maintenance-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

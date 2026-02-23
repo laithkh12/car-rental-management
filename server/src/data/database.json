@@ -1,0 +1,35 @@
+{
+  "rentalCompanyName": "Car Rental Company",
+  "cars": [
+    {
+      "companyName": "BMW",
+      "modelName": "e330",
+      "isAvailable": true,
+      "totalKilometers": 123,
+      "rentalEndDate": null,
+      "imageUrl": "https://www.motortrend.com/uploads/sites/5/2018/11/2020-BMW-330e-10.jpg",
+      "year": 2022,
+      "isInMaintenance": false,
+      "maintenanceDate": null,
+      "trips": [
+        {
+          "renterName": "Lk",
+          "date": "2026-02-23",
+          "kilometers": 123
+        }
+      ]
+    },
+    {
+      "companyName": "Toyota",
+      "modelName": "Corolla",
+      "isAvailable": true,
+      "totalKilometers": 0,
+      "rentalEndDate": null,
+      "imageUrl": "https://tse3.mm.bing.net/th/id/OIP.RU6F6cAoYJaeK5s6gk4fogHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "year": 2015,
+      "isInMaintenance": false,
+      "maintenanceDate": null,
+      "trips": []
+    }
+  ]
+}

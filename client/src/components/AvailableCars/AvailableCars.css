@@ -1,0 +1,91 @@
+.available-cars {
+  width: 100%;
+}
+
+.available-cars h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-cars {
+  text-align: center;
+  color: #666;
+  padding: 40px;
+  font-style: italic;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.car-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.car-image-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #e9ecef;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.car-card-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.company-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.car-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.car-card-body p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.car-card-body strong {
+  color: #333;
+}

@@ -1,0 +1,158 @@
+.highest-mileage-car {
+  width: 100%;
+}
+
+.highest-mileage-car h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-car {
+  text-align: center;
+  color: #666;
+  padding: 40px;
+  font-style: italic;
+}
+
+.car-highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.car-highlight-content {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.car-highlight-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.car-highlight-image-container {
+  flex-shrink: 0;
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.car-highlight-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .car-highlight-content {
+    flex-direction: column;
+  }
+  
+  .car-highlight-image-container {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+  }
+}
+
+.car-highlight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.car-highlight-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.company-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.car-highlight-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mileage-display {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.mileage-value {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.mileage-unit {
+  font-size: 1.5rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.car-details p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.car-details strong {
+  font-weight: 600;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.available {
+  background-color: rgba(40, 167, 69, 0.3);
+  color: white;
+  border: 1px solid rgba(40, 167, 69, 0.5);
+}
+
+.status-badge.rented {
+  background-color: rgba(220, 53, 69, 0.3);
+  color: white;
+  border: 1px solid rgba(220, 53, 69, 0.5);
+}
+
+.rental-end-date {
+  margin-left: 8px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+}
